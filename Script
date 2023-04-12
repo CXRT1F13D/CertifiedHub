@@ -26,29 +26,23 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Toggle = Tab:CreateToggle({
+local Button = Tab:CreateButton({
    Name = "RedOrb",
-   CurrentValue = false,
-   Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
+   Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CXRT1F13D/RedOrb/main/Script"))()
    end,
 })
 
-local Toggle = Tab:CreateToggle({
+local Button = Tab:CreateButton({
    Name = "YellowOrb",
-   CurrentValue = false,
-   Flag = "Keybind2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
+   Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/CXRT1F13D/YellowOrb/main/Script"))()
    end,
 })
 
-local Toggle = Tab:CreateToggle({
+local Button = Tab:CreateButton({
    Name = "Gem",
-   CurrentValue = false,
-   Flag = "Keybind3", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/CXRT1F13D/Gem/main/Script"))()
+   Callback = function()
+   https://raw.githubusercontent.com/CXRT1F13D/Gem/main/Script
    end,
 })
