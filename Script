@@ -43,6 +43,6 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Gem",
    Callback = function()
-   https://raw.githubusercontent.com/CXRT1F13D/Gem/main/Script
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CXRT1F13D/Gem/main/Script"))()
    end,
 })
